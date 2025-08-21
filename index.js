@@ -68,7 +68,7 @@ bot.onText(/\/start/, async (msg) => {
 
     if (verified === true) {
         bot.sendPhoto(chatId, "./devil.jpg", {
-            caption: "✅ *Welcome!*\n\nYou have access to the bot menu.",
+            caption: "✅ *Welcome!*\n\nYou have access to the bot /menu.",
             parse_mode: "Markdown"
         });
     }
@@ -95,8 +95,8 @@ bot.on("callback_query", async (query) => {
     }
 });
 
-// /start command
-/*bot.onText(/\/start/, (msg) => {
+////start command
+bot.onText(/\/menu/, (msg) => {
     const chatId = msg.chat.id;
     const userId = msg.from.id.toString();
 
@@ -117,7 +117,7 @@ bot.on("callback_query", async (query) => {
         caption: menu,
         parse_mode: 'Markdown'
     });
-});*/
+});
 
 // /buy command
 bot.onText(/\/buy/, (msg) => {
