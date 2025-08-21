@@ -1,0 +1,27 @@
+{
+  "name": "devil-tech-store-bot",
+  "version": "1.0.0",
+  "description": "Devil X Tech God Store Telegram Bot - Optimized for Speed, Stability & Scalability",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "DEVIL KING",
+  "license": "MIT",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0",
+    "dotenv": "^16.4.5",
+    "object-keys": "^1.1.1",
+    "axios": "^1.6.8",
+    "mime-types": "^2.1.35",
+    "fs-extra": "^11.2.0",
+    "moment": "^2.30.1",
+    "p-queue": "^7.3.3",
+    "compression": "^1.7.4",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
